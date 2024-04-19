@@ -1,0 +1,202 @@
+.App {
+  min-height: 100vh;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+header {
+  align-items: center;
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  background-color: rgb(246, 249, 252);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;;
+  border-radius: 5px;
+  padding:13px 15px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  
+}
+
+header .logo img {
+  height: 45px;
+}
+
+header .logo span{
+  font-size: 22px;
+  color: #525252;
+}
+
+
+
+header .themeSelect span{
+  height: 22px;
+  width: 22px;
+  margin-left: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #dfdfdf;
+  cursor: pointer;
+  /* background-color: aqua; */
+}
+
+header .themeSelect .activeTheme{
+  height: 30px;
+  width: 30px;
+}
+
+.addTask{
+  max-width: 500px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(246, 249, 252);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;;
+  border-radius: 5px;
+  padding:20px 15px;
+}
+
+
+.addTask form{
+  display: flex;
+  gap : 7px;
+}
+
+.addTask form input{
+  flex-grow: 1;
+  padding: 5px 5px;
+  border: 1px solid #eaeaea;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.addTask form input:focus{
+  outline: 0.5px solid #eaeaea;
+}
+.addTask form button{
+  width: 80px;
+  padding: 5px 5px;
+  background-color: #4abd5f;
+  border:  none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.addTask form button:hover{
+  background-color: #03b056;
+}
+
+.showTask{
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: rgb(246, 249, 252);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+  padding:20px 15px;
+}
+
+.showTask .head{
+  padding: 10px 10px 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dfdfdf;
+  
+}
+
+
+.showTask .head .title{
+  font-weight: 600;
+  font-size: 18px;
+  user-select: none;
+}
+
+
+.showTask .head .countTask{
+  margin-left: 15px;
+  width: 25px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #d5d3d3;
+  align-items: center;
+  padding: 5px 10px;
+  user-select: none;
+}
+
+.showTask .head .clearAll{
+  background-color: rgb(115, 178, 201);
+  border: none;
+  width: 120px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.showTask .head .clearAll:hover{
+  background-color: #1061db;
+}
+
+.showTask ul{
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+
+}
+
+.showTask ul li{
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-bottom: 1px solid #e5e5e5;
+  border-left: 5px solid #1365dfaf;
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+  width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.showTask li:hover{
+  background-color: #f8f8f8;
+}
+ 
+.showTask ul li p{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
+}
+
+.showTask li .name{
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.showTask li .timeDate{
+  font-size: 12px;
+  color: #737373;
+}
+
+.showTask i.bi-pencil-square{
+  font-size: 18px;
+  color: #1363DF;
+  cursor: pointer;
+}
+
+.showTask i.bi-trash3-fill{
+  font-size: 18px;
+  color: #D82148;
+  cursor: pointer;
+}
